@@ -55,7 +55,8 @@ def geraLista(tam):
     return lista
 
 for i in range (4):
-  lista=geralistacres(x[i])
+#para gerar com aleatatorio utilizar geralista, geralistacres para a lista do melhor caso e geralistadecres para o pior caso
+  lista=geraLista(x[i])
   y.append(timeit.timeit("bubble_sort({})".format(lista),setup="from __main__ import bubble_sort",number=1))
   swap.append(bubble_sort(lista))
 
