@@ -73,4 +73,3 @@ casosLabel = ['Pior caso', 'Medio caso', 'Melhor caso']
 desenhaGrafico(x, casos, casosLabel, 'CasosSelectionSort.png')
 
 #print(list(it.permutations(lista,6)))
-
