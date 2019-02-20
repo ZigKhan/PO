@@ -23,10 +23,8 @@ def desenhaGrafico(x,y,xl = "Entradas", yl = "Saídas"):
 
 # Function to do insertion sort 
 def insertionSort(arr): 
-    swaps = 0
     # Traverse through 1 to len(arr) 
     for i in range(1, len(arr)): 
-        swaps+=1
         key = arr[i] 
   
         # Move elements of arr[0..i-1], that are 
@@ -37,7 +35,6 @@ def insertionSort(arr):
                 arr[j+1] = arr[j] 
                 j -= 1
         arr[j+1] = key 
-        return swaps
     
 x = [10000,20000,30000,40000,50000]
 yMelhor = []
