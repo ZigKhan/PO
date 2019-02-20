@@ -20,7 +20,6 @@ def desenhaGrafico(x,y,xl = "Entradas", yl = "Saídas"):
     plt.xlabel(xl)
     fig.savefig('graph.png')
  
-swap=[]
 
 # Function to do insertion sort 
 def insertionSort(arr): 
@@ -67,18 +66,6 @@ para gerar o grafico do tempo de ordenacao do insertion sort
 desenhaGrafico(x,y)
 desenhaGrafico(x,yPior)
 desenhaGrafico(x,yMelhor)
-para gerar o grafico do numero de verificacoes em cada ordenacao
-desenhaGrafico(x,swap)
 
-pertmutacoes
-lista = list(it.permutations([1,2,3,4,5,6],6))
-ListaPermut = []
 
-for i in lista:
-    ListaPermut.append(list(i))
-tempos = []
-for i in ListaPermut:
-    tempos.append(timeit.timeit("insertionSort({})".format(lista),setup="from __main__ import insertionSort",number=10))
-    
-print('Pior caso:', ListaPermut(tempos))
 
