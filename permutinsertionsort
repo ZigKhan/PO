@@ -50,3 +50,4 @@ minindex = swaps.index(min(swaps))
 print('Pior caso:', ListaAuxPermut[maxindex], 'swaps:', swaps[maxindex])
 print('Pior caso:', ListaAuxPermut[minindex], 'swaps:', swaps[minindex])
 
+https://imgur.com/a/IEq8nKZ
