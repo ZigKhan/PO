@@ -84,10 +84,15 @@ desenhaGrafico(x,yMedioCaso,'Quantidade','Tempo','Medio_Caso')
 desenhaGrafico(x,yMelhorCaso,'Quantidade','Tempo','Melhor_Caso')
 
 
-for i in listaPermutada:
-    tempos.append(timeit.timeit('shellSort({})'.format(listaPermutada),setup="from __main__ import shellSort",number=1))
-    
-maxIdx = tempos.index(max(tempos))
 
-print('Tempo mais demorado:',max(tempos))
-print(listaPermutada[maxIdx])  
+for i in permut:
+    tempos.append(timeit.timeit('shellSort({})'.format(listaPermutada),setup="from __main__ import shellSort",number=1))
+
+maior = tempos.index(max(tempos))
+menor = tempos.index(min(tempos))
+
+print('Tempo maior:',max(tempo))
+print(listaPermutada[maior])
+print("\n")
+print('Tempo menor:',max(tempo))
+print(listaPermutada[maior])
