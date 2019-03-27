@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar 27 16:30:13 2019
+
+@author: alunos-lmc04
+"""
+
 import random
 import timeit
 import matplotlib as mpl
